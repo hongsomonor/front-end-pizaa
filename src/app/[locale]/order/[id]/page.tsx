@@ -7,17 +7,16 @@ import Image from "next/image";
 import {useRouter} from "next/navigation";
 import products from "@/app/data/data"; // Adjust the import path as needed
 
-interface Product {
-    id: number; // <--- កែប្រែពី string ទៅ number វិញ ឲ្យស៊ីនឹង data
-    title: string;
-    price: string;
-    img: any;
-    description: string;
+interface Props {
+  id: string;
+  price: string;
+  img: string; // Change 'any' to 'string' as it will be a URL
+  title: string;
 }
 
 const ProductDetailPage = ({params}: { params: { id: string } }) => {
     const [quantity, setQuantity] = useState(1);
-    const [product, setProduct] = useState<Product | null>(null);
+    const [product, setProduct] = useState<Props | null>(null);
     const [loading, setLoading] = useState(true);
     const router = useRouter();
 

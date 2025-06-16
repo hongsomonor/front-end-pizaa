@@ -19,8 +19,17 @@ const Card = ({ id, price, img, title }: Props) => {
           id="img"
           className=" relative bg-amber-50 w-full flex flex-col justify-center items-center"
         >
-          <span className=" absolute right-2 top-1 text-[18px]">${price}</span>
-          <Image src={img} alt="photo" width={100} height={100} objectFit="contain" /> {/* Added height and objectFit for better image handling */}
+          <span className=" absolute right-2 top-1 text-[18px] text-gray-800">
+            ${price}
+          </span>
+          <Image
+            src={img}
+            alt="photo"
+            width={300}
+            height={300}
+            objectFit="contain"
+          />{" "}
+          {/* Added height and objectFit for better image handling */}
           <div
             id="float"
             className=" absolute right-[-40px] group-hover/card:right-[15px] group-hover/card:transition-all group-hover/card:duration-300 transition-all duration-300 bg-red-700 px-2 py-3 rounded-[7px] flex flex-col gap-4  "
@@ -55,7 +64,7 @@ const Card = ({ id, price, img, title }: Props) => {
           id="info"
           className=" bg-red-700 w-full h-15 flex justify-center items-center"
         >
-          <h3 id="title" className=" text-3xl text-white font-bold">
+          <h3 id="title" className=" text-[20px] text-white font-bold">
             {title}
           </h3>
         </div>
