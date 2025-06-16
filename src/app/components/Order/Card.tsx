@@ -13,13 +13,13 @@ interface Props {
 
 const Card = ({ id, price, img, title }: Props) => {
   return (
-    <article className=" group/card overflow-hidden ">
+    <article className=" group/card overflow-hidden min-h-[400px]">
       <div className="border-5 border-red-700 rounded-[7px_7px_0_0]">
         <div
           id="img"
           className=" relative bg-amber-50 w-full flex flex-col justify-center items-center"
         >
-          <span className=" absolute right-2 top-1 text-[18px] text-gray-800">
+          <span className=" absolute right-2 top-1 text-[15px] text-gray-800">
             ${price}
           </span>
           <Image
@@ -27,8 +27,8 @@ const Card = ({ id, price, img, title }: Props) => {
             alt="photo"
             width={300}
             height={300}
-            objectFit="contain"
-          />{" "}
+            // objectFit="contain"
+          />
           {/* Added height and objectFit for better image handling */}
           <div
             id="float"
@@ -75,8 +75,8 @@ const Card = ({ id, price, img, title }: Props) => {
         className=" bg-black w-full h-11 flex justify-center items-center hover:bg-white hover:border-2 hover:border-red-700"
       >
         <button className=" hover:text-black hover:transition-all hover:duration-500 transition-all duration-500 h-full w-full cursor-pointer text-amber-50 inline-flex justify-center items-center gap-2 font-bold text-[18px]">
-          <AiOutlineShoppingCart className=" text-[26px] pb-1" />
-          Add to Cart
+          <AiOutlineShoppingCart className=" text-[23px] pb-1" />
+          <p className=" text-[15px]">Add to Cart</p>
         </button>
       </div>
     </article>
