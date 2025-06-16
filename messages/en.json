@@ -1,0 +1,45 @@
+{
+  "Menu": {
+    "home": "Home",
+    "order": "Order",
+    "about": "About",
+    "service": "Service",
+    "contact": "Contact"
+  },
+  "Home": {
+    "OurService": {
+      "Delivery": {
+        "title": "Food Delivery",
+        "details": "Choose Your favorite food and we will deliver it to your doorstep."
+      },
+      "Shop": {
+        "title": "Online Shopping",
+        "details": "Let's do Shopping - A few clicks are all it takes"
+      },
+      "Payment": {
+        "title": "Payment Services",
+        "details": "The best payment gateway ''Simple - Fast - Safe''"
+      },
+      "Local": {
+        "title": "Local Services",
+        "details": "Consumptions experience, lower price, less worry, and more savings."
+      },
+      "Travel": {
+        "title": "Travel",
+        "details": "One of ter most convenient Online Hotel Reservation Platform in Cambodia. The Best Stay Starts Here!"
+      },
+      "Entertainment": {
+        "title": "Entertainment",
+        "details": "Game related services for millions of gamers around Cambodia."
+      }
+    }
+  },
+  "about": {
+    "title": "About Page",
+    "content": "This is about page"
+  },
+  "localeSwitcher": {
+    "label": "Change Language",
+    "locale": "{locale, select, en { English} kh {Khmer}}"
+  }
+}

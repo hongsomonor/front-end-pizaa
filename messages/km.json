@@ -1,0 +1,29 @@
+{
+  "Menu": {
+    "home": "ទំព័រដើម",
+    "order": "ទិញទំនិញ",
+    "about": "អំពីយើង",
+    "service": "សេវាកម្ម",
+    "contact": "ទំនាក់ទំនង"
+  },
+  "Home": {
+    "OurService": {
+      "Delivery": {
+        "title": "ដឹកជញ្ជួនអាហារ",
+        "details": "ជ្រើសរើស អាហារដែលអ្នកពេញចិត្ត យើងខ្ញុំនឹងដឹកដល់កន្លែងរបស់អ្នក។"
+      },
+      "Shop": {
+        "title": "ទំនិញអនឡាញ",
+        "details": "តោះទិញទំនិញ គ្រាន់តែចុចប៉ូតុង ពីរបី អ្នកនឹងទទួលបានភ្លាម"
+      }
+    }
+  },
+  "about": {
+    "title": "ទំព័រ អំពីយើង",
+    "content": "នេះគឺជាទំព័រ អំពីយើង"
+  },
+  "localeSwitcher": {
+    "label": "Change Language",
+    "locale": "{locale, select, en {English} kh {Khmer}}"
+  }
+}

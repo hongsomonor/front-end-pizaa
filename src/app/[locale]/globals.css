@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes loading-bar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.animate-loading-bar {
+  animation: loading-bar 2s ease-in-out forwards;
+}
